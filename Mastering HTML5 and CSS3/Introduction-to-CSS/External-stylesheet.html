@@ -3,42 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nested HTML elements</title>
-    <style>
-        /* div h1{
-            color: red;
-        } */
-        
-        /* .container .redText{ It means I am looking for an HTML element that has a class .redText inside another HTML element that has a class .container 
-            color: red; 
-         } */
-
-        /* .container #myHeader{
-            color: blueviolet;
-        } */
-
-        .container > #myHeader{ /* If it is not the direct child it is not applied */
-            color: green;
-        }
-
-        div + h1{ /* Sibling element, the div and h1 both are on same level that is why we call this sibling */
-            color: darkgoldenrod;
-        }
-
-        /* .myText1 + .myText2{
-            color: blue;
-        } */
-
-        .myText0 ~ .myText2{ /* Target all sibling */
-            color: darkolivegreen;
-        }
-
-        input[type="text"], input[type="email"] { /* also target with class and ID */
-            border: 2px, solid blue;
-        }
-
-    </style>
-
+    <title>External Stylesheet</title>
+    <link rel="stylesheet" type="text/css" href="External-stylesheet.css">
 </head>
 <body>
     
