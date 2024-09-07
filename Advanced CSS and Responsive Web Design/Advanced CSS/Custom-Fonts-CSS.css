@@ -4,6 +4,6 @@
     src: url(ProtestGuerrilla-Regular.ttf);
 }
 
-.parents h1{
+.parent h1, h2, h3{
     font-family: "ProtestGuerrilla-Regular";
 }
