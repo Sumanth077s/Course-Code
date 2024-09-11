@@ -1,34 +1,32 @@
-.container{
+.parent{
     background-color: lightgrey;
-    margin: 1%;
+    color: white;
+}
+
+.item{
     padding: 10px;
+    margin: 1%;
     box-sizing: border-box;
 }
 
 @media all and (max-width: 600px) {
-    .container {
-        background-color: aliceblue;
+    .item {
+        background-color: tomato;
     }
 }
 
-@media all and (min-width: 601px) and (max-width: 800px) {
-    .container{
-        background-color: lightcoral;
+@media all and (max-width: 800px) and (min-width: 601px) {
+    .item {
         width: 48%;
         float: left;
+        background-color: plum;
     }
 }
 
 @media all and (min-width: 801px) {
-    .container{ 
-        background-color: lightgreen;
+    .item {
         width: 31%;
         float: left;
-    }
-}
-
-@media print { /* When print the doc it shows normal white and black layout */
-    .container{
-        background-color: white;
+        background-color: sandybrown;
     }
 }
