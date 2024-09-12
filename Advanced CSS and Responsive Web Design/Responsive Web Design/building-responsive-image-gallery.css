@@ -1,4 +1,4 @@
-.container{
+.gallery{
     background-color: lightgray;
     display: grid;
     padding: 10px;
@@ -7,17 +7,32 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
 
-    gap: 10px;
+    gap: 15px;
 }
 
 .item{
     background-color: rgb(45, 45, 156);
     color: white;
     font-size: 30px;
+    
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.item img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+    transition: all 0.5s ease-in-out;
+
+}
+
+.item img:hover{
+    transform: scale(0.8); /* this is the hover effect, scale down the image size */
+    opacity: 0.5;  /* this is the hover effect, reduce the opacity means reduce the brightness and  make it look like it's being "pushed" */
 }
 
 .item-3{
