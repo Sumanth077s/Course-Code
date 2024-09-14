@@ -1,0 +1,85 @@
+/* :root basically point to the HTML element */
+:root{
+    font-family: 'SUSE', sans-serif;
+    min-height: 100vh;
+    /* max-width: 1280px; */
+    max-width: auto;
+    background-color: white;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0 !important;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.page-container{
+
+}
+
+.nav{
+    
+}
+
+nav {
+    background-color: #222222;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+nav .logo .title {
+    font-size: 20px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+nav ul li {
+    color: white;
+    padding: 22px 40px;
+    background-color: #333333;
+}
+
+nav ul li:hover{
+    background-color: #222222;
+}
+
+nav ul li.active {
+    background-color: #222222;
+}
+
+nav ul li a {
+    color: white;
+}
+
+
+/* @font-face{
+    font-family: "PlaywriteCU-variableFont_wght";
+
+    src: url(PlaywriteCU-VariableFont_wght.ttf);
+}
+
+p{
+    font-family: "PlaywriteCU-variableFont_wght";
+} */
