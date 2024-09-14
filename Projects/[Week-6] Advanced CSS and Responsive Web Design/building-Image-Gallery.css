@@ -74,6 +74,52 @@ nav ul li a {
 }
 
 
+/* Tablets */
+@media all and (max-width: 800px) {
+    nav {
+        justify-content: flex-start;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+}
+
+/* Phone */
+@media all and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+
+
 /* @font-face{
     font-family: "PlaywriteCU-variableFont_wght";
 
