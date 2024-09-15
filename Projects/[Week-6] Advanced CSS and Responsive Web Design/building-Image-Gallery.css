@@ -334,8 +334,8 @@ nav ul li a {
 /* Footer */
 
 .footer {
-    position: fixed;
-    /* position: relative; */
+    /* position: fixed; */
+    position: relative;
     left: 0;
     right: 0;
     bottom: 0;
