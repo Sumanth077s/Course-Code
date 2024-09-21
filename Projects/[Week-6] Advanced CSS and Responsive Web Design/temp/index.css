@@ -1,12 +1,15 @@
 :root {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
     margin: 0 auto;
-    background-color: white;
 }
 
+
 body {
-    background-color: white;
-    border: 1px solid #222;
-    margin: 0 !important;
+    margin: auto;
+    border: 1px solid #ddd;
 }
 
 .page-container {
@@ -18,44 +21,221 @@ body {
 }
 
 nav {
+    background-color: #222222;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    background-color: #333333;
 }
 
 nav .logo {
     display: flex;
-    flex-direction: row;
+    color: white;
     justify-content: center;
     align-items: center;
 }
 
 nav .logo img {
-    width: 57px;
-    height: 57px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    padding: 10px;
+    padding: 12px;
 }
 
 nav .logo .title {
-    color: white;
     font-size: 20px;
+    font-weight: bolder;
 }
 
 nav ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     list-style: none;
-    justify-content: flex-start;
 }
 
 nav ul li {
-    display: flex;
-    flex-direction: row;
+    padding: 22px 40px;
+    background-color: #333333;
+    transition: all 0.3s ease-out;
 }
 
-nav ul li a {
+nav ul li.active {
+    background-color: #222222;
+}
+
+nav ul li:hover {
+    background-color: #222222;
+}
+
+nav ul a {
     color: white;
 }
+
+
+/* banner */
+
+.banner {
+    background-image: url(https://unsplash.it/900/400/?blur);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner .heading {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    animation: banner-animation 1s ease-in-out 0s forwards;
+}
+
+.banner .heading small {
+    font-size: 25px;
+}
+
+@keyframes banner-animation {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+
+/* main-text */
+
+.main-text {
+    padding: 12px;
+    font-size: 20px;
+}
+
+
+/* subtext */
+
+.subtext {
+    display: flex;
+}
+
+.subtext div {
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.subtext .html-red {
+    background-color: tomato;
+}
+
+.subtext .css-yellow {
+    background-color: rgb(117, 117, 39);
+}
+
+.subtext .web-development-green {
+    background-color: green;
+}
+
+/* project-heading */
+
+.project-heading h3 {
+    border-top: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+    padding: 12px;
+    margin: 6px;
+    font-size: 24px;
+}
+
+
+/* projects */
+
+.projects {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.project {
+    margin: 20px;
+    padding: 20px;
+    flex-basis: 325px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.project h3 {
+    border-top: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.project img {
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+.project button {
+    background-color: #4caf50;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    transition: all 0.2s ease-in;
+}
+
+.project button:hover {
+    background-color: #329135;
+    transform: scale(0.95);
+}
+
+/* blockquote */
+
+.quote {
+    display: block;
+    background-color: #eeeeee;
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.quote::before {
+    display: inline-block;
+    content: open-quote;
+    color: blue;
+    font-size: 32px;
+}
+
+.quote::after {
+    display: inline-block;
+    content: close-quote;
+    color: blue;
+    font-size: 32px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #222222;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    font-size: 20px;
+}
+
