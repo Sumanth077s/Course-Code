@@ -14,3 +14,4 @@ var perSeason = 22/2;
 console.log('Episode per season: ' + perSeason);
 
 console.log(2 ** 6 + 'bits'); /* The result is 2 power 6 (2^6) */ 
+console.log(20 % 4);
