@@ -22,7 +22,11 @@ Designation: ${designation}
 Organization: ${organization}
 Location: ${location}`; /* here we use [ ` ] this */
 
+var sentence = 'I can\'t believe it\'s already October';
+
 var greeting = `Hi, my name is ${user} \u{1F642} and i work as a ${designation} at ${organization}. Here's a simple equation: 2 + 2 = ${2+2}`; /* for smile emoji we put ( \u{1F642} ) */
+
+console.log(sentence);
 
 console.log(employeeData);
 
