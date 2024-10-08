@@ -1,17 +1,17 @@
-'use strict';
-// Write your code here...
+'use strict'
 
-var user = {
-    name: 'Michelle Roberts',
-    age: 28,
-    location: {
-        city: 'New York',
-        country: 'US',
-    },
-    isAdmin: false,
-};
+var bestsellers = [
+    'Contact',
+    'Deception Point',
+    'Digital Fortress',
+    'Jurassic Park',
+    'Shantaram',
+];
 
-console.log('User: ' + user.name);
-console.log('City: ' + user.location.city);
-console.log('Age: ' + user.age);
-console.log('Is User an Administrator?' + user.isAdmin);
+bestsellers.push('Freakonomics');
+
+bestsellers[1] = 'The Lord of the Rings';
+
+console.log(`Bestsellers: `,
+    bestsellers.toString()
+);
