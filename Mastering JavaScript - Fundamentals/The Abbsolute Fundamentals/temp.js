@@ -1,17 +1,11 @@
 'use strict'
 
-var bestsellers = [
-    'Contact',
-    'Deception Point',
-    'Digital Fortress',
-    'Jurassic Park',
-    'Shantaram',
-];
+var waterTemperature = 55;
 
-bestsellers.push('Freakonomics');
+var isItBoiling = waterTemperature >= 100;
+var isItFrozen = waterTemperature <= 0;
+var isItWarm = waterTemperature > 30 && waterTemperature < 60;
 
-bestsellers[1] = 'The Lord of the Rings';
-
-console.log(`Bestsellers: `,
-    bestsellers.toString()
-);
+console.log('Is the water boiling? ' + isItBoiling);
+console.log('Is the water frozen? ' + isItFrozen);
+console.log('Is it the worm? ' + isItWarm);
