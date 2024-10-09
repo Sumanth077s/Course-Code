@@ -14,9 +14,9 @@ try {
         throw new Error(`Both operands must belongs to the same data type!`); /* Custom Error */
     var c = a + b;
     console.log(`The result of the sum is ${c}`);
-} catch (Error) {
+} catch (error) {
     // console.log(`Oops! There was an error!`);
-    console.log(Error);  /* We want to know what is the error so it goes to the "throw new Error" and show the error message */
+    console.log(error);  /* We want to know what is the error so it goes to the "throw new Error" and show the error message */
 } finally {
     console.log(`I will run no matter what!`);
 }
