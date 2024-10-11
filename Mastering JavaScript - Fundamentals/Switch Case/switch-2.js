@@ -1,7 +1,8 @@
 'use strict';
 
 // let item = 'Kiwi';
-let item = 'Potato';
+// let item = 'Potato';
+let item = 'Lettuce';
 let type;
 
 switch (item) {
@@ -11,7 +12,7 @@ switch (item) {
     case 'Strawberry':
         type = 'fruit';
         break;
-    case 'lettuce':
+    case 'Lettuce':
     case 'Potato':
     case 'Celery':
     case 'Eggplant':
@@ -22,4 +23,4 @@ switch (item) {
     }
 }
 
-console.log(`${item} is a type of ${type}`);
+console.log(`${item} is a ${type}`);
