@@ -17,4 +17,7 @@ let restaurants = [
     },
 ];
 
-console.log(`Location ${restaurants[0].location.lat}, ${restaurants[0].location.long}`);
+console.log(`Location: ${restaurants[0].location.lat}, ${restaurants[0].location.long}`);
+
+console.log(`Location: ${restaurants[1].location?.lat}, ${restaurants[1].location?.long}`); /* "?"  */
+console.log(`Location: ${restaurants[1].location?.lat ?? 'N/A'}, ${restaurants[1].location?.long ?? 'N/A'}`);
