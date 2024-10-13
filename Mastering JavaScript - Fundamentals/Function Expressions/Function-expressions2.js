@@ -9,7 +9,7 @@ const convertTemp = function(temp, convertTo) {
         return `${fahrenheit}\u{00B0}F`;
     } else {
         let celsius = ((tempToConvert - 32) * 5) / 9;
-        return `${celsius}\u{00B0}C`
+        return `${celsius}\u{00B0}C`;
     }
 };
 
