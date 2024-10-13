@@ -8,7 +8,8 @@ function computerRectStats(length, width) {
 }
 
 function computePayable(cost) {
-    let discount = cost < 1000 ? 0 : 10;
+    // let discount = cost < 1000 ? 0 : 10;
+    let discount = Number(cost) < 1000 ? 0 : 10; /* This can handle "String" as well */
     
     // let totalCost = cost - cost * (discount / 100);
     // return totalCost;
@@ -21,5 +22,5 @@ let rectAWidth = 10;
 
 computerRectStats(rectALength, rectAWidth);
 
-console.log(`The discounted price of the: ${computePayable(2500)}`);
+console.log(`The discounted price of the: ${computePayable("2500")}`);
 console.log(`The discounted price of the: ${computePayable(500)}`);
