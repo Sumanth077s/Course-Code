@@ -9,8 +9,11 @@ function computerRectStats(length, width) {
 
 function computePayable(cost) {
     let discount = cost < 1000 ? 0 : 10;
-    let totalCost = cost - cost * (discount / 100);
-    return totalCost;
+    
+    // let totalCost = cost - cost * (discount / 100);
+    // return totalCost;
+
+    return cost - cost * (discount / 100);
 }
 
 let rectALength = 25;
