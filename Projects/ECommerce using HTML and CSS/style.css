@@ -160,11 +160,13 @@ p{
     box-shadow: 20px 20px 34px rgba(0,0,0,0.05);
     border: 1px solid #cce7d0;
     margin: 15px 0;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 25px;
 }
 
 #features .f-box:hover{
     box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.14);
+    transform: scale(1.05);
 }
 
 #features .f-box img{
@@ -180,6 +182,7 @@ p{
     border-radius: 4px;
     color: #088178;
     background-color: #f7ddfd;
+    border-radius: 6px;
 }
 
 #features .f-box2 h6{
@@ -217,17 +220,197 @@ p{
 }
 
 .product-section .product-cart {
-    width: 200px;
+    width: 380px;
     border: 1px solid #ebebeb;
     padding: 13px;
     margin-bottom: 30px;
     border-radius: 25px;
     position: relative;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
-    transition: box-shadow 0.2s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-section .product-cart:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.10);
+    transform: scale(1.05);
 }
 
 .product-section .product-cart img {
     width: 100%;
     border-radius: 25px;
+}
+
+.product-section .product-cart span {
+    color: #969696;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.product-section .product-cart h4 {
+    font-size: 18px;
+    color: rgba(41, 41, 41);
+}
+
+.product-section .product-cart .stars {
+    color: #e6ae2c;
+    padding: 6px 0;
+}
+
+.product-section .product-cart .price {
+    color: #088178;
+    padding: 4px 0;
+}
+
+.product-section .product-cart .buy-icon {
+    color: #088178;
+    background-color: #c7e9e75e;
+    padding: 15px;
+    border-radius: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#offer-banner {
+    background-image: url(images/banner/b2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#offer-banner h4, #offer-banner h2 {
+    color: #eaebf0;
+}
+
+#offer-banner h2 {
+    padding: 20px 0;
+}
+
+#offer-banner button {
+    font-size: 14px;
+    font-weight: 600px;
+    padding: 15px 30px;
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.2s;
+    /* margin: 20px; */
+}
+
+#offer-banner button:hover {
+    transform: scale(0.96);
+}
+
+.new-products {
+    margin-top: 20px;
+}
+
+#banners {
+    margin: 0 60px;
+}
+
+#banners h2, h4, span {
+    color: rgba(248, 248, 248);
+}
+
+
+#banners .big-banners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banners .big-banners div {
+    min-width: 500px;
+    margin: 15px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    background-size: cover;
+    backdrop-filter: blur(8%);
+}
+
+#banners .big-banners-1 {
+    background-image: url(images/banner/b17.jpg);
+    border-radius: 10px;
+}
+
+#banners .big-banners-2 {
+    background-image: url(images/banner/b10.jpg);
+    border-radius: 10px;
+}
+
+#banners .small-banners-1 {
+    background-image: url(images/banner/b7.jpg);
+    border-radius: 10px;
+}
+
+#banners .small-banners-2 {
+    background-image: url(images/banner/b4.jpg);
+    border-radius: 10px;
+}
+
+#banners .small-banners-3 {
+    background-image: url(images/banner/b18.jpg);
+    border-radius: 10px;
+}
+
+#banners .big-banners button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    color: rgb(248, 248, 248);
+    border: 1px solid rgb(248, 248, 248);
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+#banners .big-banners div:hover button {
+    transform: scale(0.95);
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+#banners .small-banners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banners .small-banners div {
+    min-width: 370px;
+    height: 200px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px;
+    background-size: cover;
+}
+
+#banners .small-banners h2 {
+    font-size: 25px;
+}
+
+#banners .small-banners h5 {
+    color: #771818;
+}
+
+#newsletter {
+    
 }
