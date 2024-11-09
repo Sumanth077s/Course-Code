@@ -201,3 +201,33 @@ p{
 #features .f-box6 h6 {
     background-color: #e2a6a6;
 }
+
+
+.product-section .pro-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 60px;
+}
+
+.product-section h1, .product-section p {
+    text-align: center;
+
+    /* border: 2px solid red; */
+}
+
+.product-section .product-cart {
+    width: 200px;
+    border: 1px solid #ebebeb;
+    padding: 13px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s;
+}
+
+.product-section .product-cart img {
+    width: 100%;
+    border-radius: 25px;
+}
